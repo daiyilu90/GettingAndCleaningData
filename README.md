@@ -26,10 +26,30 @@ Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Project Result: Codes and Files
+
+
+Project Process and Result:
 
 More infomation about data, variables and transformation that performed on the data are in CodeBook.md
 Run run_analysis.R in R3.2.3 will generate cleandata.txt and tidydata.txt.
+
+run_analysis.R:
+
+#1 download file
+#2 unzip the file
+#3 save upzip file and get the list of files 
+#4 read all required files (see list above)
+#5 adding column names to all files
+#6 column combine activity, subject and features files and row combine test and train files
+#7 Only keep measurements on the mean and standard deviation by searching "mean" or "sd" in the column names.
+#8 merge the activity labels file to repalce activity with activity descriptions. 
+#9 sorting and reorder column  by subject, activity description
+#10 Remove redudant symbols in variable names and make them readable 
+#11 export table to cleandata.txt
+#12 calculate the average of each variables on each activity and subject. Export to tidydata.txt
+
+
+final output files:
 cleandata.txt combined several pieces datasets with files: subject, activity, and  measurements on the mean and standard deviation for each measurement.
 All variables names are descriptive and appropriately labeled. 
 tidydata.txt is independent tidy data set with the average of each variable for each activity and each subject.
