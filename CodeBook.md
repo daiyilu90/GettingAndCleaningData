@@ -117,18 +117,18 @@ tBodyGyroJerkMean
 
 run_analysis.R Process:
 
-#1 download file
-#2 unzip the file
-#3 save upzip file and get the list of files 
-#4 read all required files (see list above)
-#5 adding column names to all files
-#6 column combine activity, subject and features files and row combine test and train files
-#7 Only keep measurements on the mean and standard deviation by searching "mean" or "sd" in the column names.
-#8 merge the activity labels file to repalce activity with activity descriptions. 
-#9 sorting and reorder column  by subject, activity description
-#10 Remove redudant symbols in variable names and make them readable 
-#11 export table to cleandata.txt
-#12 calculate the average of each variables on each activity and subject. Export to tidydata.txt
+1 download file
+2 unzip the file
+3 save upzip file and get the list of files 
+4 read all required files (see list above)
+5 adding column names to all files
+6 column combine activity, subject and features files and row combine test and train files
+7 Only keep measurements on the mean and standard deviation by searching "mean" or "sd" in the column names.
+8 merge the activity labels file to repalce activity with activity descriptions. 
+9 sorting and reorder column  by subject, activity description
+10 Remove redudant symbols in variable names and make them readable 
+11 export table to cleandata.txt
+12 calculate the average of each variables on each activity and subject. Export to tidydata.txt
 
 final output files:
 cleandata.txt combined several pieces datasets with files: subject, activity, and measurements on the mean and standard deviation for each measurement. All variables names are descriptive and appropriately labeled. 
